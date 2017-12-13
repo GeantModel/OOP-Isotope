@@ -6,20 +6,16 @@ using namespace std;
 class isotope {
 private : string name;
     int iz, n;
-    double a, fm;
+    double a, fm, cs;
 public:
-    isotope(const string &name, int iz, int n, double a, double fm) : name(name), iz(iz), n(n), a(a), fm(fm) {}
-    int getName() const {
+    isotope(const string &name, int iz, int n, double a, double fm, double cs) : name(name), iz(iz), n(n), a(a), fm(fm), cs(cs) {}
+    string getName() const {
+        return name;
             }
     int getIz() const {
         return iz;
     }
-    void setIz(int iz) {
-        isotope::iz = iz;
-    }
-    void setName(int name) {
-        isotope::name = name;
-    }
+
     int getN() const {
         return n;
     }
@@ -29,14 +25,8 @@ public:
     double getFm() const {
         return fm;
     }
-    void setFm(double fm) {
-        isotope::fm = fm;
-    }
-    void setA(double a) {
-        isotope::a = a;
-    }
-    void setN(int n) {
-        isotope::n = n;
+    double getCs() const {
+        return cs;
     }
 };
 #endif

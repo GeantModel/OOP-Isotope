@@ -1,9 +1,7 @@
 #ifndef UNTITLED1_ELEMENT_H
 #define UNTITLED1_ELEMENT_H
 #include <vector>
-
 class Element {
-
 private: int *arr;
     int numb;
 public: vector<isotope> mas;
@@ -17,20 +15,21 @@ public: vector<isotope> mas;
     int getNumb() const {
         return numb;
     }
-    void setNumb(int numb) {
-        Element::numb = numb;
-    }
-    const vector <isotope> &getAA() const {
+        const vector <isotope> &getMas() const {
         return mas;
     }
     void setmas(const vector <isotope> &mas) {
         Element::mas = mas;
     }
     Element(int numb) : numb(numb) {}
+
     void getinfo(){
         for (auto it : mas){
-            cout<<"name = "<<it.getName()<<", iz = "<<it.getIz()<<", n = "<<it.getN()<<", a = "<<it.getA()<<"*g/mole, fm = "<<it.getFm()<<endl;
+            cout<<"name = "<<it.getName()<<", iz = "<<it.getIz()<<", n = "
+                <<it.getN()<<", a = "<<it.getA()<<"*g/mole, fm = "<<it.getFm()
+                <<"  cs-(N,TOT) = "<<it.getCs()<<endl;
         }
     };
+
 };
 #endif
