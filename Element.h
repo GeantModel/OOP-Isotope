@@ -5,7 +5,8 @@ class Element {
 private: int *arr;
     int numb;
 public: vector<isotope> mas;
-    Element(int *arr, int numb, const vector <isotope> &mas);
+
+
     int *getArr() const {
         return arr;
     }
@@ -21,8 +22,6 @@ public: vector<isotope> mas;
     void setmas(const vector <isotope> &mas) {
         Element::mas = mas;
     }
-    Element(int numb) : numb(numb) {}
-
     void getinfo(){
         for (auto it : mas){
             cout<<"name = "<<it.getName()<<", iz = "<<it.getIz()<<", n = "

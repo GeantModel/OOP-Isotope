@@ -13,7 +13,7 @@ int main() {
     a.push_back(*C1);
     a.push_back(*C2);
     a.push_back(*C3);
-    Element*B = new Element(3);
+    Element*B = new Element;
     B->setmas(a);
     B->getinfo();
 }
