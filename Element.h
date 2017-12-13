@@ -5,21 +5,7 @@ class Element {
 private: int *arr;
     int numb;
 public: vector<isotope> mas;
-
-
-    int *getArr() const {
-        return arr;
-    }
-    void setArr(int *arr) {
-        Element::arr = arr;
-    }
-    int getNumb() const {
-        return numb;
-    }
-        const vector <isotope> &getMas() const {
-        return mas;
-    }
-    void setmas(const vector <isotope> &mas) {
+     void setmas(const vector <isotope> &mas) {
         Element::mas = mas;
     }
     void getinfo(){
